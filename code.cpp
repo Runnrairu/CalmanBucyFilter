@@ -46,7 +46,7 @@ for(l=1;l<n;l++){
 print X[l];
 } 
 for(l=1;l<n;l++){
-print X[l];
+print Xhat[l];
 } 
 
 
