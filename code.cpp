@@ -13,10 +13,11 @@ int main(){
   G=0.6;
   C=0.3;
    D=0.2;
-    double X[n],Y[n],W[n],B[n],Xhat[n];
+    double X[n],Y[n],W[n],B[n],Xhat[n],S[n];
     X[0]=0;
    Y[0]=0;
     Xhat[0]=0;
+   S[0]=0
    int Im=pow(2,n)+1;
 int i;
 int j;
@@ -35,9 +36,12 @@ for(i=0;i<=10;i++){
     }
 }
 double deltat=1/n;
-for(int l=1;l<=n;l++){
+for(int l=0;l<=n;l++){
 X[l+1]=X[l]+deltat*F*X[l]+C*(B[l+1]-B[l]);
 Y[l+1]=Y[l]+deltat*G*X[l]+D*(W[l+1]-W[l]);
+}
+for(l=0;l<n;l++){
+S[l+1]=S[l]+deltat*(2*F*S[l]-pow(G,2)*pow(S[l],2)/pow(D,2)+pow(C,2));
 }
 for(l=1;l<n;l++){
 Xhat[l]=(F-(pow(G,2)*S[l]/pow(D,2)))*Xhat[l]*deltat+(G*S[l]/pow(D,2))*(Y[l+1]-Y[l]);
