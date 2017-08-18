@@ -8,7 +8,7 @@ double sdlab_normal(double mu, double sigma);
 double sdlab_uniform();
 int main(){
   double F,G,C,D;
-  int n=5+1;
+  int n=1000;
    F=0.5;
   G=0.6;
   C=0.3;
@@ -23,7 +23,7 @@ int i;
 int j;
 int l;
 
-for(i=0;i<=10;i++){
+for(i=0;i<=100;i++){
     for(int j=1;j<=Im;j=j+2){
          double a;
          a=sdlab_normal(0,1);
