@@ -8,7 +8,7 @@ X=[0]*(n+2)
 Y=[0]*(n+2)
 S=[0]*(n+2)
 Xhat=[0]*(n+2)
-delta_t=1000/n
+delta_t=1.0/n
 F=0.1
 G=0.2
 C=0.2
@@ -25,6 +25,6 @@ for i in range(n):
 	Y[i+1]=G*X[i]*delta_t+D*random.gauss(0,delta_t)
 for i in range(n):
 	Xhat[i+1]=(F-(G*G*S[i]/(D*D)))*Xhat[i]*delta_t+G*S[i]/(D*D)*(Y[i+1]-Y[i])
-print X
-print "こっからXhat"
-print Xhat
+print (X)
+print ("こっからXhat")
+print (Xhat)
