@@ -1,7 +1,8 @@
 # カルマンブーシーフィルタの実装
 ## カルマンブーシーフィルタとは
 連続時間版のカルマンフィルタ。主に確率微分方程式に関する統計理論として研究されている。   
-今回
+今回は次のような確率微分方程式を考える。  
+<img src="https://latex.codecogs.com/gif.latex?dX_t=FX_t&space;dt&plus;C&space;dW_t" />
 
 
 
