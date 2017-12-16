@@ -11,8 +11,8 @@
   
 <img src="https://latex.codecogs.com/gif.latex?d\hat{X}_t=(F-\frac{G^2S_t}{D^2})\hat{X}_tdt+\frac{GS_t}{D^2}dY_t" />
     
-ただし、Sは次の常微分方程式に従う、時刻tでの平均二乗誤差である。  
-  
+ただし、Sは次の常微分方程式に従う、時刻tでの平均二乗誤差である。  
+　  
 <img src="https://latex.codecogs.com/gif.latex?S'_t=-\frac{G^2S^2_t}{D^2}+2FS+C^2" />
   
 このレポジトリでは、乱数によって生成されるサンプルパスを増やしていけば平均二乗誤差がSに収束することを数値的に確かめた。  
