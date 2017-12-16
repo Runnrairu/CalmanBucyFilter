@@ -18,15 +18,15 @@ G=0.2
 C=0.2
 D=0.1
 sigma=np.power(delta_t,0.5)
+for i in range(n):
+    k1=f(i,S[i])
+    k2=f(i+delta_t/2,S[i]+delta_t*k1/2)
+    k3=f(i+delta_t/2,S[i]+delta_t*k2/2)
+    k4=f(i+delta_t,S[i]+delta_t*k3)
+    S[i+1]=S[i]+delta_t*(k1+2*k2+2*k3+k4)/6
 for k in range(l):
     m=10*np.power(10,k)
     moment=[[0 for i in range(n)] for j in range(m)]
-    for i in range(n):
-        k1=f(i,S[i])
-        k2=f(i+delta_t/2,S[i]+delta_t*k1/2)
-        k3=f(i+delta_t/2,S[i]+delta_t*k2/2)
-        k4=f(i+delta_t,S[i]+delta_t*k3)
-        S[i+1]=S[i]+delta_t*(k1+2*k2+2*k3+k4)/6
     for j in range(m):
         X[0]=0
         Y[0]=0
