@@ -1,6 +1,5 @@
-import math
 import numpy as np
-import random
+import matplotlib.pyplot as plt
 def f(t,S):
     return -G*G*S*S/(D*D)+2*F*S+C*C
 
