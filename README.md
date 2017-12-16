@@ -21,7 +21,6 @@
 <img src="https://latex.codecogs.com/gif.latex?E[|X_t-\hat{X}_t|^2]=S_t" />
 　    
 が成り立つことを、数値実験により確認した。  
-　
 ### 参考文献
 [1]Bernt Oksendal,Stochastic Differential Equations: An Introduction with Applications(2010)  
 [2]小川重義,確率微分方程式の数値解法(2001)
