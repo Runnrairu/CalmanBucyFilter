@@ -15,8 +15,7 @@
 
 <img src="https://latex.codecogs.com/gif.latex?S'_t=-\frac{G^2S^2_t}{D^2}+2FS+C^2" />
 
-このレポジトリでは、乱数によって生成されるサンプルパスを増やしていけば平均二乗誤差がSに収束することを数値的に確かめた。  
-すなわち
+このレポジトリでは、乱数によって生成されるサンプルパスを増やしていけば平均二乗誤差がSに収束することを数値的に確かめた。すなわち
 
 <img src="https://latex.codecogs.com/gif.latex?E[|X_t-\hat{X}_t|^2]=S_t" />
 
