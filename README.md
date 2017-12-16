@@ -15,12 +15,12 @@
   
 <img src="https://latex.codecogs.com/gif.latex?S'_t=-\frac{G^2S^2_t}{D^2}+2FS+C^2" />
   
-ここで、乱数によって生成されるサンプルパスに対して、その数を増やしていけば平均二乗誤差に収束することを数値的に確かめる。  
+このレポジトリでは、乱数によって生成されるサンプルパスを増やしていけば平均二乗誤差がSに収束することを数値的に確かめた。  
 すなわち  
   
 <img src="https://latex.codecogs.com/gif.latex?E[|X_t-\hat{X}_t|^2]=S_t" />
   
-が成り立つことを、数値実験により確かめる。
+が成り立つことを、数値実験により確認した。
 
 ### 参考文献
 [1]Bernt Oksendal,Stochastic Differential Equations: An Introduction with Applications(2010)  
